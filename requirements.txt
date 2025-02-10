@@ -1,0 +1,10 @@
+torch
+torchvision
+tensorflow
+numpy
+matplotlib
+opencv-python
+scikit-learn
+foolbox
+adversarial-robustness-toolbox
+jupyter
