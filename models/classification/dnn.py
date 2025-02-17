@@ -14,7 +14,7 @@ class SimpleDNN(nn.Module):
             nn.Dropout(0.2),
             nn.Linear(256, num_classes)
         )
-    
+
     def forward(self, x):
         x = self.flatten(x)
         return self.fc(x)
