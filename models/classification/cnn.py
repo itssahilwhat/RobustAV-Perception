@@ -18,7 +18,7 @@ class CustomCNN(nn.Module):
             nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.fc_layers = nn.Sequential(
-            nn.Linear(128 * 4 * 4, 256),  # ⚠️ Adjust based on your input size
+            nn.Linear(128 * 15 * 16, 256),  # ⚠️ Adjust based on your input size
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(256, num_classes)
