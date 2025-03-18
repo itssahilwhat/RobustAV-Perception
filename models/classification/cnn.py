@@ -18,7 +18,7 @@ class CustomCNN(nn.Module):
             nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.fc_layers = nn.Sequential(
-            nn.Linear(128 * 15 * 16, 256),  # ⚠️ Adjust based on your input size
+            nn.Linear(128 * 16 * 16, 256),
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(256, num_classes)
@@ -26,6 +26,6 @@ class CustomCNN(nn.Module):
 
     def forward(self, x):
         x = self.conv_layers(x)
-        x = torch.flatten(x, 1)  # ✅ Dynamically flatten the feature map
+        x = torch.flatten(x, 1)
         x = self.fc_layers(x)
         return x

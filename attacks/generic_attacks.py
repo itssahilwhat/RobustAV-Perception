@@ -11,9 +11,9 @@ from foolbox.attacks import L2CarliniWagnerAttack, L2BasicIterativeAttack
 from models.classification.cnn import CustomCNN
 from models.classification import resnet
 
-WEIGHTS_PATH = r"D:/DataspellProjects/AVs Adv Attack/models/gtsrb/cnn.pth"
-DATASET_PATH = r"D:/DataspellProjects/AVs Adv Attack/data/gtsrb/GTSRB/Final_Test/Images"
-LABELS_PATH = r"D:/DataspellProjects/AVs Adv Attack/data/gtsrb/GT-final_test.csv"
+WEIGHTS_PATH = r"/home/itssahilwhat/DataspellProjects/AVs Adv Attack/models/gtsrb/cnn.pth"
+DATASET_PATH = r"/home/itssahilwhat/DataspellProjects/AVs Adv Attack/data/gtsrb/GTSRB/Final_Test/Images"
+LABELS_PATH = r"/home/itssahilwhat/DataspellProjects/AVs Adv Attack/data/gtsrb/GT-final_test.csv"
 
 def load_model(model_type, num_classes, device):
     if model_type == "cnn":
