@@ -221,7 +221,7 @@ def load_ground_truth_labels_by_index():
 # Main function to run defense on a set of attacked images
 # -------------------
 def main():
-    parser = argparse.ArgumentParser(description="Dual-Path Ensemble Defense against digital adversarial attacks on traffic signs")
+    parser = argparse.ArgumentParser(description="Dual-Path Ensemble Defense against digital adversarial attack on traffic signs")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--num_samples", type=int, default=15, help="Number of images to process")
     parser.add_argument("--similarity_threshold", type=float, default=0.7, help="Cosine similarity threshold")
